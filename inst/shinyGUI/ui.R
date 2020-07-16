@@ -204,7 +204,7 @@ clusteringResults <-fluidPage(
       ## Plot 4
       hr(),
       h2(textOutput("TSNE_facet_Text")),
-      # plotOutput("plotTSNE_facet", width = "700px", height = "600px"),
+      plotOutput("plotTSNE_facet", width = "700px", height = "600px"),
       fluidRow(
         column(6,
                selectInput("TSNE_facet_colourBy", "Select the parameter to color by:", list("Cluster"=cluster_var, "Antigen"="Antigen", "Batch"="batch")),
